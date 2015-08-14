@@ -106,9 +106,9 @@ whichDeferred.promise
 
     // Can't use a global version so start a download.
     if (process.platform === 'linux' && process.arch === 'x64') {
-      downloadUrl += 'linux-x86_64.zip'
+      downloadUrl = 'https://github.com/tsaikd/phantomjs/releases/download/2.0.0-alpha/phantomjs-2.0.0-20150814-debian-x86_64.zip'
     } else if (process.platform === 'darwin' || process.platform === 'openbsd' || process.platform === 'freebsd') {
-      downloadUrl += 'macosx.zip'
+      downloadUrl = 'https://github.com/tsaikd/phantomjs/releases/download/2.0.0-alpha/phantomjs-2.0.0-20141016-macosx.zip'
     } else {
       console.error('Unexpected platform or architecture:', process.platform, process.arch)
       exit(1)
